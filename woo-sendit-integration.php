@@ -4,7 +4,7 @@
  * Description: Integrates WooCommerce with Sendit delivery service for automatic order processing and seamless API integration.
  * Version: 1.0.0
  * Author: Mohammed Foud Mohammed Ali
- * Author URI: https://yourwebsite.com
+ * Author URI: https://randai.app
 * Author Email: mfoud444@gmail.com
  * Author Phone: +967714589027
  * Text Domain: woo-sendit-integration
