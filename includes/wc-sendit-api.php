@@ -20,6 +20,7 @@ class WC_Sendit_API {
             ]),
         ]);
 
+        error_log('authenticate ' . print_r($response, true));
         if (is_wp_error($response)) {
             return $response;
         }
@@ -48,7 +49,7 @@ class WC_Sendit_API {
             ],
             'body'    => wp_json_encode($order_data),
         ]);
-
+        error_log('deliveries ' . print_r($response, true));
         if (is_wp_error($response)) {
             return $response;
         }
