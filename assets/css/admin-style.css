@@ -1,0 +1,278 @@
+/* Admin Styles for Sendit Integration */
+.wrap h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="checkbox"] {
+    margin: 10px 0;
+}
+
+form .regular-text {
+    width: 50%;
+}
+
+.password-container {
+    /* position: relative; */
+    /* display: inline-block; */
+}
+
+.password-container input[type="password"],
+.password-container input[type="text"] {
+    padding-right: 30px;
+    width:100%;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #777;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.toggle-password:hover {
+    color: #444;
+}
+
+.toggle-password:focus {
+    outline: none;
+    color: #2271b1;
+}
+
+.toggle-password .dashicons {
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+}
+
+/* Status indicators */
+.sendit-status {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.sendit-status .dashicons {
+    margin-right: 5px;
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.sendit-status.success {
+    background-color: #f0f9f0;
+    color: #2a8a2a;
+    border: 1px solid #c3e6c3;
+}
+
+.sendit-status.error {
+    background-color: #fef1f1;
+    color: #c32525;
+    border: 1px solid #fcc;
+}
+
+/* Hide API fields when integration is disabled */
+.sendit-disabled .api-fields {
+    display: none;
+}
+
+/* Login Section Styles */
+.sendit-login-section {
+    margin-top: 30px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.sendit-login-section h2 {
+    margin-top: 0;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.sendit-current-status {
+    margin: 15px 0;
+}
+
+.sendit-current-status h4 {
+    margin: 0 0 10px 0;
+}
+
+.sendit-try-login-form {
+    margin-top: 15px;
+}
+
+/* Connection Status Styles */
+.sendit-connection-status {
+    margin: 20px 0;
+}
+
+.sendit-disconnect-form {
+    margin-top: 15px;
+}
+
+.sendit-status {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.sendit-status strong {
+    font-weight: 600;
+}
+
+/* Button Spacing */
+.sendit-try-login-form .button,
+.sendit-disconnect-form .button {
+    margin-top: 10px;
+}
+
+/* Status Message Styles */
+.sendit-status.error {
+    background-color: #fef1f1;
+    color: #c32525;
+    border: 1px solid #fcc;
+}
+
+.sendit-status.success {
+    background-color: #f0f9f0;
+    color: #2a8a2a;
+    border: 1px solid #c3e6c3;
+}
+
+/* API Connection Test Section Styles */
+.sendit-login-section {
+    margin-top: 30px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.sendit-section-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.sendit-section-header h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.sendit-status {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.sendit-status .dashicons {
+    margin-right: 5px;
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.sendit-status.success {
+    background-color: #f0f9f0;
+    color: #2a8a2a;
+    border: 1px solid #c3e6c3;
+}
+
+.sendit-status.error {
+    background-color: #fef1f1;
+    color: #c32525;
+    border: 1px solid #fcc;
+}
+
+.sendit-connection-actions {
+    margin-top: 20px;
+}
+
+.sendit-try-login-form .button,
+.sendit-disconnect-form .button {
+    min-width: 100px;
+}
+
+/* Submit buttons container */
+.submit-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Password toggle button styles */
+.password-container {
+    position: relative;
+    display: inline-block;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #777;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+/* Try Login button container */
+.try-login-button {
+    margin: 10px 0 0 0;
+}
+
+/* Connection status row styles */
+.sendit-connection-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sendit-status {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.sendit-status .dashicons {
+    margin-right: 5px;
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.sendit-status.error {
+    background-color: #fef1f1;
+    color: #c32525;
+    border: 1px solid #fcc;
+}
+
+.sendit-status.success {
+    background-color: #f0f9f0;
+    color: #2a8a2a;
+    border: 1px solid #c3e6c3;
+}
+
+/* Ensure the status message and button align properly */
+.sendit-connection-row .button {
+    white-space: nowrap;
+    margin: 0;
+}
