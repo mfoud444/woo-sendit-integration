@@ -3,17 +3,12 @@
 <p align="center">
   <img src="logo.jpeg" alt="WooCommerce Sendit Integration" width="300px" height="300px">
 </p>
-
-<p align="center">
-  <em>Seamlessly integrate WooCommerce with Sendit for automated delivery management.</em>
-</p>
-
-<p align="center">
-  <a href="https://github.com/your-repo/woocommerce-sendit-integration/actions">
-    <img src="https://img.shields.io/github/actions/workflow/status/your-repo/woocommerce-sendit-integration/release-pipeline.yml?logo=githubactions&label=CI&logoColor=white&color=4169E1" alt="Github Actions">
+<!-- <p align="center">
+  <a href="https://github.com/mfoud444/woo-sendit-integration/actions">
+    <img src="https://img.shields.io/github/actions/workflow/status/mfoud444/woo-sendit-integration/release-pipeline.yml?logo=githubactions&label=CI&logoColor=white&color=4169E1" alt="Github Actions">
   </a>
-  <a href="https://app.codecov.io/gh/your-repo/woocommerce-sendit-integration">
-    <img src="https://img.shields.io/codecov/c/github/your-repo/woocommerce-sendit-integration?logo=codecov&logoColor=white&label=Coverage&color=5D4ED3" alt="Test Coverage">
+  <a href="https://app.codecov.io/gh/mfoud444/woo-sendit-integration">
+    <img src="https://img.shields.io/codecov/c/github/mfoud444/woo-sendit-integration?logo=codecov&logoColor=white&label=Coverage&color=5D4ED3" alt="Test Coverage">
   </a>
   <a href="https://pypi.python.org/pypi/woocommerce-sendit-integration/">
     <img src="https://img.shields.io/pypi/v/woocommerce-sendit-integration?logo=Python&logoColor=white&label=PyPI&color=7934C5" alt="PyPI Version">
@@ -22,9 +17,9 @@
     <img src="https://img.shields.io/pepy/dt/woocommerce-sendit-integration?logo=PyPI&logoColor=white&label=Downloads&color=9400D3" alt="Total Downloads">
   </a>
   <a href="https://opensource.org/license/mit/">
-    <img src="https://img.shields.io/github/license/your-repo/woocommerce-sendit-integration?logo=opensourceinitiative&logoColor=white&label=License&color=8A2BE2" alt="MIT License">
+    <img src="https://img.shields.io/github/license/mfoud444/woo-sendit-integration?logo=opensourceinitiative&logoColor=white&label=License&color=8A2BE2" alt="MIT License">
   </a>
-</p>
+</p> -->
 
 </div>
 
