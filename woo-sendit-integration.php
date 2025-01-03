@@ -14,7 +14,7 @@
 
 
 if (!defined('ABSPATH')) {
-    exit; // Exit if accessed directly
+    exit; 
 }
 
 class Woo_Sendit_Integration {
@@ -37,11 +37,7 @@ class Woo_Sendit_Integration {
      */
     private function check_woocommerce() {
         if (!in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get_option('active_plugins')))) {
-            add_action('admin_notices', function() {
-                echo '<div class="error"><p>';
-                echo esc_html__('WooCommerce Sendit Integration requires WooCommerce to be installed and activated.', 'woo-sendit-integration');
-                echo '</p></div>';
-            });
+         
             return false;
         }
         return true;
@@ -68,7 +64,7 @@ class Woo_Sendit_Integration {
         // Code to run on activation
         if (!class_exists('WooCommerce')) {
             deactivate_plugins(plugin_basename(__FILE__));
-            wp_die(__('WooCommerce is required to use this plugin.', 'woo-sendit-integration'));
+          
         }
     }
 
@@ -113,5 +109,4 @@ class Woo_Sendit_Integration {
         wp_enqueue_style('dashicons');
     }
 }
-
 new Woo_Sendit_Integration();

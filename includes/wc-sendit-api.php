@@ -20,7 +20,6 @@ class WC_Sendit_API {
             ]),
         ]);
 
-        error_log('authenticate ' . print_r($response, true));
         if (is_wp_error($response)) {
             return $response;
         }
@@ -49,7 +48,7 @@ class WC_Sendit_API {
             ],
             'body'    => wp_json_encode($order_data),
         ]);
-        error_log('deliveries ' . print_r($response, true));
+
         if (is_wp_error($response)) {
             return $response;
         }
@@ -63,4 +62,47 @@ class WC_Sendit_API {
 
         return $data;
     }
+
+
+
+    public function get_district_id($city_name) {
+        if (!$this->token) {
+            return new WP_Error('no_token', __('Authentication token is missing.', 'woo-sendit-integration'));
+        }
+
+        $response = wp_remote_get("{$this->api_url}/districts", [
+            'headers' => [
+                'Authorization' => 'Bearer ' . $this->token,
+                'Content-Type'  => 'application/json',
+            ],
+            'body' => [
+                'querystring' => $city_name,
+                'page' => 1
+            ]
+        ]);
+
+ 
+        if (is_wp_error($response)) {
+            return $response;
+        }
+
+        $body = wp_remote_retrieve_body($response);
+        $data = json_decode($body, true);
+
+        if (!empty($data['data']) && is_array($data['data'])) {
+            // Find exact or close match
+            foreach ($data['data'] as $district) {
+                if (strtolower($district['name']) === strtolower($city_name)) {
+                    return $district['id'];
+                }
+            }
+            // If no exact match found, return first result
+            if (!empty($data['data'][0]['id'])) {
+                return $data['data'][0]['id'];
+            }
+        }
+
+        return new WP_Error('district_not_found', __('District not found.', 'woo-sendit-integration'));
+    }
+
 }

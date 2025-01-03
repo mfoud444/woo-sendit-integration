@@ -75,7 +75,6 @@ The plugin uses token-based authentication:
 
 - API credentials are stored securely in WordPress options
 - All API communications use HTTPS
-- Password fields are properly masked
 - Nonce verification for form submissions
 - Capability checks for admin actions
 
