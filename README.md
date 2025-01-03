@@ -1,7 +1,7 @@
 <div id="top">
 
 <p align="center">
-  <img src="logo.jpeg" alt="WooCommerce Sendit Integration" width="85%">
+  <img src="logo.jpeg" alt="WooCommerce Sendit Integration" width="300px" height="300px">
 </p>
 
 <p align="center">
