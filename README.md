@@ -1,80 +1,137 @@
-# WooCommerce Sendit Integration
+<div id="top">
 
-A WordPress plugin that integrates WooCommerce with Sendit delivery service for automatic order processing.
+<p align="center">
+  <img src="jogo.jpeg" alt="WooCommerce Sendit Integration" width="85%">
+</p>
 
-## Description
+<p align="center">
+  <em>Seamlessly integrate WooCommerce with Sendit for automated delivery management.</em>
+</p>
 
-This plugin provides seamless integration between WooCommerce and Sendit delivery service. It allows automatic order synchronization and delivery management directly from your WordPress dashboard.
+<p align="center">
+  <a href="https://github.com/your-repo/woocommerce-sendit-integration/actions">
+    <img src="https://img.shields.io/github/actions/workflow/status/your-repo/woocommerce-sendit-integration/release-pipeline.yml?logo=githubactions&label=CI&logoColor=white&color=4169E1" alt="Github Actions">
+  </a>
+  <a href="https://app.codecov.io/gh/your-repo/woocommerce-sendit-integration">
+    <img src="https://img.shields.io/codecov/c/github/your-repo/woocommerce-sendit-integration?logo=codecov&logoColor=white&label=Coverage&color=5D4ED3" alt="Test Coverage">
+  </a>
+  <a href="https://pypi.python.org/pypi/woocommerce-sendit-integration/">
+    <img src="https://img.shields.io/pypi/v/woocommerce-sendit-integration?logo=Python&logoColor=white&label=PyPI&color=7934C5" alt="PyPI Version">
+  </a>
+  <a href="https://www.pepy.tech/projects/woocommerce-sendit-integration">
+    <img src="https://img.shields.io/pepy/dt/woocommerce-sendit-integration?logo=PyPI&logoColor=white&label=Downloads&color=9400D3" alt="Total Downloads">
+  </a>
+  <a href="https://opensource.org/license/mit/">
+    <img src="https://img.shields.io/github/license/your-repo/woocommerce-sendit-integration?logo=opensourceinitiative&logoColor=white&label=License&color=8A2BE2" alt="MIT License">
+  </a>
+</p>
+
+</div>
+
+<img src="https://raw.githubusercontent.com/eli64s/readme-ai/eb2a0b4778c633911303f3c00f87874f398b5180/docs/docs/assets/svg/line-gradient.svg" alt="line break" width="100%" height="3px">
+
+## Quick Links
+
+- [Introduction](#introduction)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Configuration](#configuration)
+- [Contributing Guidelines](#contributing)
+
+---
+
+## Introduction
+
+**WooCommerce Sendit Integration** is a powerful WordPress plugin designed to automate order synchronization and delivery management by integrating WooCommerce with the Sendit delivery service. This plugin enables businesses to streamline their operations directly from their WordPress dashboard.
+
+---
 
 ## Features
 
-- Easy API configuration
-- Secure credential storage
-- Real-time connection status
-- Automatic order synchronization
-- Connection status monitoring
+- **Easy API Configuration**: Quick and straightforward setup.  
+- **Secure Credential Storage**: Safeguard your sensitive data.  
+- **Real-Time Connection Status**: Stay updated with live monitoring.  
+- **Automatic Order Synchronization**: Save time and eliminate manual tasks.  
+- **Connection Status Monitoring**: Reliable status tracking.
 
-## Requirements
+---
 
-- WordPress 5.8 or higher
-- PHP 7.4 or higher
-- WooCommerce 5.0 or higher
-- Active Sendit account with API credentials
+## Getting Started
 
-## Installation
+### Requirements
 
-1. Download the plugin zip file
-2. Go to WordPress admin panel > Plugins > Add New
-3. Click "Upload Plugin" and choose the downloaded zip file
-4. Click "Install Now"
-5. After installation, click "Activate"
+- **WordPress**: Version 5.8 or higher  
+- **PHP**: Version 7.4 or higher  
+- **WooCommerce**: Version 5.0 or higher  
+- **Sendit API Credentials**: Active account with API keys.
+
+### Installation
+
+1. Download the plugin `.zip` file.  
+2. Navigate to `WordPress Admin Panel > Plugins > Add New`.  
+3. Click `Upload Plugin` and select the downloaded `.zip` file.  
+4. Click `Install Now` and then `Activate`.  
+
+---
 
 ## Configuration
 
-1. Go to WordPress admin panel > Settings > Sendit Integration
-2. Enable the integration by checking "Enable Integration"
-3. Enter your Sendit API credentials:
-   - Public Key
-   - Secret Key
-4. Click "Save Changes"
-5. Click "Try Login" to verify your credentials
+1. Navigate to `WordPress Admin Panel > Settings > Sendit Integration`.  
+2. Enable the integration by selecting the checkbox for "Enable Integration".  
+3. Enter your **Sendit API Credentials**:
+   - **Public Key**  
+   - **Secret Key**  
+4. Click `Save Changes`.  
+5. Verify your credentials by clicking `Try Login`.
 
-## API Documentation
-
-The plugin integrates with Sendit API v1.0.0. For detailed API documentation, visit:
-`https://app.sendit.ma/api/v1/`
-
-### Authentication
-
-The plugin uses token-based authentication:
-1. Initial authentication using Public/Secret keys
-2. Subsequent requests use the obtained token
-3. Token is automatically refreshed when needed
+---
 
 ## Development
 
-### Project Structure 
+### API Documentation
+
+This plugin integrates with the **Sendit API v1.0.0**. For detailed documentation, visit:  
+[https://app.sendit.ma/api/v1/](https://app.sendit.ma/api/v1/)  
+
+#### Authentication Process
+
+- Initial authentication requires **Public** and **Secret Keys**.  
+- A token is generated and used for subsequent API requests.  
+- The token is refreshed automatically when necessary.  
+
+### Project Structure
 
 ```
-    woo-sendit-integration/
-    ├── assets/
-    │ ├── css/
-    │ │ └── admin-style.css
-    │ └── js/
-    │ └── admin-script.js
-    ├── includes/
-    │ ├── wc-sendit-settings.php
-    │ ├── wc-sendit-api.php
-    │ └── wc-sendit-order-handler.php
-    ├── index.php
-    ├── uninstall.php
-    └── woo-sendit-integration.php
+woo-sendit-integration/
+├── assets/
+│   ├── css/
+│   │   └── admin-style.css
+│   └── js/
+│       └── admin-script.js
+├── includes/
+│   ├── wc-sendit-settings.php
+│   ├── wc-sendit-api.php
+│   └── wc-sendit-order-handler.php
+├── index.php
+├── uninstall.php
+└── woo-sendit-integration.php
 ```
+
+---
 
 ## Security
 
-- API credentials are stored securely in WordPress options
-- All API communications use HTTPS
-- Nonce verification for form submissions
-- Capability checks for admin actions
+- Secure storage of API credentials in WordPress options.  
+- Encrypted HTTPS communication for all API calls.  
+- **Nonce verification** ensures the integrity of form submissions.  
+- **Capability checks** protect admin actions from unauthorized access.  
 
+---
+
+## Contributing Guidelines
+
+We welcome contributions! Check out our [contribution guidelines](#) for more details.
+
+---
+
+<p align="right">(<a href="#top">Back to top</a>)</p>
